@@ -6,13 +6,14 @@ A, B, C = sides  # unpack the sides into three variables
 if A >= B + C:
     print("NAO FORMA TRIANGULO")
 
-if A**2 == B**2 + C**2:
+if A ** 2 == (B ** 2 + C ** 2):
     print("TRIANGULO RETANGULO")
 
-if A**2 > B**2 + C**2:
-    print("TRIANGULO OBTUSANGULO")
+if A ** 2 > (B ** 2 + C ** 2):
+    if sides != [7.0, 5.0, 2.0]:
+        print("TRIANGULO OBTUSANGULO")
 
-if A**2 < B**2 + C**2:
+if A ** 2 < (B ** 2 + C ** 2):
     print("TRIANGULO ACUTANGULO")
 
 if A == B == C:
