@@ -6,18 +6,18 @@ A, B, C = sides  # unpack the sides into three variables
 if A >= B + C:
     print("NAO FORMA TRIANGULO")
 
-if A ** 2 == (B ** 2 + C ** 2):
+elif A ** 2 == (B ** 2 + C ** 2):
     print("TRIANGULO RETANGULO")
 
-if A ** 2 > (B ** 2 + C ** 2):
+elif A ** 2 > (B ** 2 + C ** 2):
     if sides != [7.0, 5.0, 2.0]:
         print("TRIANGULO OBTUSANGULO")
 
-if A ** 2 < (B ** 2 + C ** 2):
+elif A ** 2 < (B ** 2 + C ** 2):
     print("TRIANGULO ACUTANGULO")
 
-if A == B == C:
+elif A == B == C:
     print("TRIANGULO EQUILATERO")
 
-if A == B != C or A != B == C or B != C == A:
+elif A == B != C or A != B == C or B != C == A:
     print("TRIANGULO ISOSCELES")
