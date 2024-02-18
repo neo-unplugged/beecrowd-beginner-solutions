@@ -1,0 +1,3 @@
+# income
+salary = float(input())
+
