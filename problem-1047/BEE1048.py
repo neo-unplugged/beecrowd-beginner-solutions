@@ -1,13 +1,32 @@
-times = [int(i) for i in input().split()]
-start_hour, start_min, end_hour, end_min = times
+# read start time and end time
+h1, m1, h2, m2 = map(int, input().split())
 
-hours = end_hour - start_hour
-minutes = end_min - start_min
+h = h2 - h1
+m = m2 - m1
 
-if minutes < 0:
-    hours -= 1
-    minutes += 60
+# keep in mind only case when both
+# h and m greater than 0 we pass
+# either of them greater than 0 we pass
 
-if hours <= 0 :
-    hours += 24
-print("O JOGO DUROU %d HORA(S) E %d MINUTO(S)" % (hours, minutes))
+if h == 0 and m == 0:
+    h += 24
+
+elif h == 0 and m < 0:
+    h += 23
+    m += 60
+
+elif h < 0 and m == 0:
+    h += 24
+
+elif h > 0 > m:
+    h -= 1
+    m += 60
+
+elif h < 0 < m:
+    h += 23
+
+elif h < 0 and m < 0:
+    h += 23
+    m += 60
+
+print("O JOGO DUROU %d HORA(S) E %d MINUTO(S)" % (h, m))
