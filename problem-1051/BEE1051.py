@@ -1,3 +1,0 @@
-# income
-salary = float(input())
-
