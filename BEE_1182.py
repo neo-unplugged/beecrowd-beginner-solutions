@@ -10,4 +10,4 @@ for i in range(12):
         if j == L:
             result += M[i][j]
 
-print('{}'.format(result)) if M == 'S' else print('{:.1f}'.format(result//12))
+print('{}'.format(result)) if M == 'S' else print('{:.1f}'.format(result/12))
